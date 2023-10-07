@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box!important;
+    margin: 0;
+}
+
+header{
+    margin: 0;
+}
+
+img{
+    height: 7vh !important;
+    min-height: 40px;
+    min-width: 50px;
+    
+ 
+}
+
+
+
+.nav-link{
+    
+    font-size: 0.8em !important;
+    color: rgb(197, 202, 206)!important;}
+    
+
+ .container-fluid{
+    margin:0;
+    @media screen and (max-width: 300px){
+        width: 60%; }
+ }
+   
+
+
+.imagenHome{
+    background-size: cover;
+    height: 650px;
+    @media screen and (max-width: 300px){
+    height: 300px; }
+
+}
+.nav-link:hover{
+    filter: brightness(1.75) !important;
+    cursor: pointer;
+}
+
+
+.headerText{
+    @media screen and (max-width: 400px){
+        font-size: 0.6em;
+    
+        
+    } 
+}
+
+.card-img-top{
+    display: flex !important;
+    justify-content: center !important;
+    align-content: center!important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px !important;
+  
+    height: 250px !important;
+    max-width: 280px !important;
+    min-width: 280px!important;
+}
+
+
+
+.card{
+    max-width: 280px !important;
+    min-width: 280px!important;
+}
+
+.btn{
+    font-size: 0.7em;
+}
+
+.btn:hover{
+    opacity: 1 !important;
+    filter: brightness(1) !important;
+
+}
+
+.honolulu{
+    height: auto!important;
+    min-width: 250px!important;
+
+
+}
+
+.honoluluText{
+    height: auto !important;
+    min-width: 400px!important;
+    font-size: 0.9em!important;
+    min-height: 300px!important;
+    
+}
+
+.honoluluImage{
+    height:auto !important;
+    min-width: 400px!important;
+    min-height: 300px!important;
+   
+  
+   
+}
+
+.honoluluContainer{
+    flex-wrap: wrap!important;
+ 
+}
+
+.footer{
+    background-color: rgb(15, 43, 53) !important;
+    border-radius: 14px;
+    
+}
+
