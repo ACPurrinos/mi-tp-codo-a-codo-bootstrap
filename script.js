@@ -1,18 +1,30 @@
 
-document.getElementById('resumen').addEventListener('click', (evento)=>{
-    evento.preventDefault();
-     calcularTotalAPagar();
-    });
+// window.addEventListener("DOContentLoaded", (event)=>{
+//     const el = document.getElementById('btnResumen');
+//     if (el){
+//         el.addEventListener('click', calcularTotalAPagar);
+//     }
+// })
+// const cantidad = parseInt(document.getElementById('cantidad'));
+// const categoria = document.getElementById('categoria');
+
+document.getElementById('btnResumen').addEventListener('click', (event)=>{
+event.preventDefault();
+calcularTotalAPagar();
+});
 
 function calcularTotalAPagar(){
-    const valorTicket= 200;
-    let descuentoEstudiante = 0.80;
-    let descuentoTrainee = 0.50;
+const cantidad = parseInt(document.getElementById('cantidad').value);
+const categoria = document.getElementById('categoria').value;
+const valorTicket= 200;
+let descuentoEstudiante = 0.80;
+let descuentoTrainee = 0.50;
 let descuentoJunior = 0.15;
 let total = cantidad * valorTicket;
-const cantidad = document.getElementById('cantidad');
-const categoria = document.getElementById('categoria');
+
+
  switch(categoria){
+   
  case "Estudiante": 
  total = total - (total*descuentoEstudiante);
 break;
